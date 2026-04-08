@@ -6,13 +6,127 @@ console.log("Bienvenido Diego, inicia tu aprendizaje ahora");
 let nombre= "Diego";
 let edad= 28; 
 let casado= false; 
-let IntoMen= true; 
 let vacio= null; //Este tipo de dato lo usamos nosotros a voluntad.
 let noDefinido= undefined; //JavaScript se encarga de proporcionarnos este dato.
 let simboloUnico= Symbol("único");
 //bigInt
 let numerosGrandes= 2n;
 let numeroGrande= BigInt(34);
+const cientifico= 5e3; //500
+const infinito= Infinity;
+const noEsUnNumero=NaN;
+
+//OPERACIONES ARITMETICAS
+//SUMA,RESTA, MULTIPLICACION Y DIVISION:
+let suma= 3+4;
+let resta= 3-2;
+let multiplicacion= 3*45;
+let division= 50/5; 
+//MODULO, EXPONENCIACION
+const modulo= 15%3;//sirve para saber si un número es multiplo de otro número.
+const exponenciacion=2**3; //Esto es igual a 2*2*2
+
+//PROBLEMAS DE PRESICIÓN EN JS: 
+const resultado= 0.1+0.2; //0.3000000005
+console.log(resultado.toFixed(1));
+// OPERACIONES CON MATH:
+// ===============================
+// OBJETO MATH EN JAVASCRIPT
+// ===============================
+
+// Número base
+let num = 4.7;
+
+
+// ===============================
+// 1. REDONDEO
+// ===============================
+console.log(Math.round(num)); 
+// 5 → redondea al entero más cercano
+
+console.log(Math.floor(num)); 
+// 4 → redondea hacia abajo
+
+console.log(Math.ceil(num));  
+// 5 → redondea hacia arriba
+
+console.log(Math.trunc(num)); 
+// 4 → elimina decimales (no redondea)
+
+
+// ===============================
+// 2. NÚMEROS ALEATORIOS
+// ===============================
+let aleatorio = Math.random();
+
+console.log(aleatorio); 
+// número entre 0 y 1 (ej: 0.234)
+
+// Número aleatorio entre 1 y 10
+let aleatorio1a10 = Math.floor(Math.random() * 10) + 1;
+
+console.log(aleatorio1a10);
+// 1 a 10
+
+
+// ===============================
+// 3. MÁXIMO Y MÍNIMO
+// ===============================
+console.log(Math.max(5, 10, 2)); 
+// 10 → el mayor
+
+console.log(Math.min(5, 10, 2)); 
+// 2 → el menor
+
+
+// ===============================
+// 4. POTENCIAS Y RAÍCES
+// ===============================
+console.log(Math.pow(2, 3)); 
+// 8 → 2 elevado a la 3
+
+console.log(2 ** 3); 
+// 8 → forma moderna
+
+console.log(Math.sqrt(16)); 
+// 4 → raíz cuadrada
+
+
+// ===============================
+// 5. VALOR ABSOLUTO
+// ===============================
+console.log(Math.abs(-10)); 
+// 10 → convierte a positivo
+
+
+// ===============================
+// 6. CONSTANTES IMPORTANTES
+// ===============================
+console.log(Math.PI); 
+// 3.1416... → valor de π
+
+
+// ===============================
+// ⚠️ IMPORTANTE
+// ===============================
+
+// Math NO cambia la variable original
+let x = 4.9;
+
+Math.floor(x);
+
+console.log(x); 
+// 4.9 ❌ sigue igual
+
+// Debes guardar el resultado
+x = Math.floor(x);
+
+console.log(x); 
+// 4 ✅ ahora sí cambió
+// Operaciones avanzadas
+const raizCuadrada= Math.sqrt(16);
+
+
 
 // //COMPLEJOS: 
 // object, array, function
